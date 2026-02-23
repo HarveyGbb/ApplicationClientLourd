@@ -1,0 +1,15 @@
+# Fichiers compilés Java
+*.class
+/bin/
+/target/
+/build/
+
+# Fichiers de l'IDE (Eclipse, VS Code, IntelliJ)
+.settings/
+.project
+.classpath
+.vscode/
+.idea/
+
+# Fichiers Mac OS (très important si tu es sur Mac !)
+.DS_Store
