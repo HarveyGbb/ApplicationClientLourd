@@ -11,13 +11,13 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            // On demande à Java de charger le fichier FXML qu'on vient de créer
-            Parent root = FXMLLoader.load(getClass().getResource("login_view.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/view/login_view.fxml"));
             
-            // On crée la fenêtre avec les dimensions
+            //  fenêtre avec les dimensions
             Scene scene = new Scene(root, 500, 700);
             
-            primaryStage.setTitle("ÉCRAN CUISINE - DRAGON D'OR");
+            //  titre de la fenêtre
+            primaryStage.setTitle("DRAGON D'OR - Connexion");
             primaryStage.setScene(scene);
             primaryStage.show();
             
@@ -30,5 +30,6 @@ public class Main extends Application {
         launch(args);
     }
 }
+
 
 

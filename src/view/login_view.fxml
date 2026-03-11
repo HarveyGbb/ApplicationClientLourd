@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="500.0" prefWidth="700.0" spacing="15.0" style="-fx-background-color: #2c3e50;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <Label text="🐉 DRAGON D'OR" textFill="#f1c40f">
+         <font><Font name="System Bold" size="30.0" /></font>
+      </Label>
+      
+      <TextField fx:id="txtIdentifiant" maxWidth="250.0" promptText="Email (ex: admin@dragon.com)" style="-fx-pref-height: 35;" />
+      
+      <PasswordField fx:id="txtMotDePasse" maxWidth="250.0" promptText="Mot de passe" style="-fx-pref-height: 35;" />
+      
+      <Button onAction="#seConnecter" prefWidth="250.0" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-font-weight: bold; -fx-pref-height: 40; -fx-cursor: hand;" text="SE CONNECTER" />
+      
+      <Label fx:id="lblErreur" textFill="#ff7675">
+         <font><Font name="System Bold" size="13.0" /></font>
+      </Label>
+   </children>
+</VBox>
